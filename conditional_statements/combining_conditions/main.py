@@ -25,6 +25,12 @@
 # print("Is this a seasonal or holiday item?", temporary_stock) 
 discounted = False
 lowStock = True
+
+# Define a boolean variable movingProduct that is True if the item is either discounted or low in stock, using logical operators
 movingProduct = (discounted) or (lowStock)
+
+# Create a boolean variable promotion that is True if the item is not discounted and sufficiently stocked.
 promotion = not(discounted) and not(lowStock)
+
+# Print whether the item is eligible for promotion: Is the item eligible for promotion? <promotion>
 print("Is the item eligible for promotion?", promotion)
